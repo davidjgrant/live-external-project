@@ -9,6 +9,11 @@ h1, h4 {
     text-align: center;
 }
 
+h4 a {
+    color: black;
+
+}
+
 .container {
     align-content: center;
     display: grid;
