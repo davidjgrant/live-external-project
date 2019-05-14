@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     padding: 40px 12vw;
     margin: 0;
+    height: auto;
 }
 
 h1, h4 {
@@ -21,7 +22,6 @@ h1, h4 {
    background-color: grey;
    padding: 10px;
 }
-
 
 .button {
   font-size: 1em;
@@ -52,18 +52,16 @@ h1, h4 {
 }
 
 .popup {
-  margin: 25vw auto;
+  margin: 10vw 10vw;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width: 30%;
   position: relative;
   transition: all 2s ease-in-out;
 }
 
 .popup h2 {
   margin-top: 0;
-  color: #333;
   font-family: Tahoma, Arial, sans-serif;
 }
 .popup .close {
@@ -77,18 +75,24 @@ h1, h4 {
   color: #333;
 }
 .popup .close:hover {
-  color: #333;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
+  color: rgb(116, 116, 116);
 }
 
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2);
+  grid-gap: 20px;
+  align-content: center;
+
 }
+
+.popup_text {
+  padding: 5px;
+}
+
+.popup_img {
+    width: 600px;
+    height: auto;
+}
+
