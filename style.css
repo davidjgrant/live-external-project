@@ -13,13 +13,13 @@ h1, h4 {
     align-content: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 150px);
+    grid-template-rows: repeat(4, 200px);
     grid-gap: 20px;
 }
 
 .box {
    color: #333;
-   background-color: grey;
+   background-color: #282C34;
    padding: 10px;
 }
 
@@ -30,9 +30,15 @@ h1, h4 {
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
+
 }
 .button:hover {
-  background: #333;
+  background: #E06C75;
+}
+
+.box img {
+  margin-top: 10px;
+  max-width: 300px;
 }
 
 .overlay {
@@ -75,7 +81,7 @@ h1, h4 {
   color: #333;
 }
 .popup .close:hover {
-  color: rgb(116, 116, 116);
+  color: #E06C75;
 }
 
 .content {
@@ -83,6 +89,7 @@ h1, h4 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2);
   grid-gap: 20px;
+  align-content: center;
 }
 
 .popup_text {
