@@ -52,7 +52,7 @@ h1, h4 {
 }
 
 .popup {
-  margin: 10vw 10vw;
+  margin: 10vw;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
@@ -83,8 +83,6 @@ h1, h4 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2);
   grid-gap: 20px;
-  align-content: center;
-
 }
 
 .popup_text {
@@ -93,6 +91,5 @@ h1, h4 {
 
 .popup_img {
     width: 600px;
-    height: auto;
 }
 
